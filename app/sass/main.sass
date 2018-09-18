@@ -1,0 +1,378 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	background-image: url('../img/img6.jpg')
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.container-fluid, .row, .col-sm-12
+	height: 100%
+
+.section
+	position: relative
+video
+	
+	min-height: 100vh
+	width: 100vw
+	position: absolute
+.icon-logo
+	font-size: 100px
+	color: $grey
+	margin-top: 3%
+	transition: color .7s
+
+.pb-logo
+	margin-left: 1%
+	padding-top: 0.5%
+	display: block
+	width: 140px
+	&:hover
+		text-decoration: none
+		.icon-logo
+			color: red
+.pb-header
+	display: flex
+	justify-content: space-between
+.pb-header-contacts
+	margin-top: 2%
+	margin-right: 5%
+	color: #666
+	text-shadow: 3px 3px 4px #000
+	line-height: 20px
+	.fa
+		color: #333
+	p
+		margin-top: 5px
+	.header-phone
+		letter-spacing: 1px
+		font-size: 17px
+	.fa
+		margin-right: 10px
+		font-size: 20px
+
+.section, .slide
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+
+.s1-content
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	color: $accent
+	text-shadow: 3px 3px 4px #000
+	opacity: .7
+	position: absolute
+	top: 0
+	left: 0
+	height: 100vh
+	width: 60vw
+	
+	span
+		color: $red
+	.icon-logo
+		margin-top: -5%
+		font-size: 200px
+		color: red
+h3,h1,p
+	margin: 0
+	
+h1
+	
+	font-family: $accent-font
+.h1-s-one
+	font-size: 70px 
+	
+.h3-s-one
+	font-size: 35px
+	margin-top: -1%
+
+
+.s1-footer
+	display: flex
+	position: absolute
+	width: 100%
+	bottom: 10%
+	left: 0
+	justify-content: center
+	.fa
+		font-size: 40px
+		margin: 0 7px
+		color: darken($accent, .2)
+		opacity: .6
+		transition: opacity .4s
+		&:hover
+			opacity: 1
+
+.fp-slidesNav
+	ul
+		display: flex
+		justify-content: center
+
+.fp-controlArrow
+	border: none
+	.fa
+		transition: color .5s
+		color: #fff
+		text-shadow: -3px -3px 4px #000
+		font-size: 25px
+.fp-next, .fp-prev
+	display: flex
+	justify-content: center
+	align-items: center
+	top: 5%
+	height: 95%
+	width: 6%
+	z-index: 10
+	&:hover
+		.fa
+			color: #333
+	&:active
+		.fa
+			color: #fff
+.fp-next
+	margin-right: 30px
+
+	
+		
+.fp-prev
+	margin-left: 60px
+
+.slide
+	display: flex
+	justify-content: center
+	align-items: center
+	ul
+		padding-left: 0
+		color: #AC935D
+		text-shadow: 3px 3px 4px #000
+		width: 60%
+		text-align: center
+		list-style-type: none
+		font-size: 25px
+		li
+			margin-top: 20px
+.slide:nth-child(2)
+	ul
+		color: #C5A198
+.slide:nth-child(3)
+	ul
+		color: #A39A91
+
+#section3
+	.row
+		display: flex
+		align-items: center
+.fotorama
+	margin-left: 10%
+	margin-top: 10%
+	opacity: .9
+.fotorama-content
+	white-space: nowrap
+	color: #B9ABA1
+	text-shadow: 3px 3px 4px #000
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	margin-right: 10%
+	h3, h1, h2
+		width: 85%
+		text-align: center
+		font-size: 30px
+	h1, h2
+		margin: 0
+		font-size: 45px
+		opacity: .8
+		span
+			color: $accent
+	h2
+		line-height: 45px
+	.icon-logo
+		font-size: 150px
+		color: $accent
+
+#section4
+	display: flex
+	align-items: center
+
+.pb-free-time
+	padding-top: 15%
+	color: #CCC5BD
+	text-shadow: 3px 3px 4px #000
+	.icon-emblem
+		font-size: 100px
+		color: red
+		opacity: .8
+	font-size: 27px
+	text-align: center
+	line-height: 27px
+	h3
+		font-size: 24px
+		letter-spacing: 1px
+	h1
+		line-height: 40px
+		margin-top: 25px
+	span
+		color: $accent
+#section5
+	position: relative
+.pb-map
+	position: absolute
+	bottom: 30px
+	left: 30px
+	height: 200px
+	width: 500px
+
+#map
+	height: 200px
+	width: 500px
+	opacity: .8
+	border-radius: 15px
+	transition: all .5s
+	z-index: 99
+	&:hover
+		opacity: 1
+		transform: scale(1.05)
+.pb-contacts-info
+	text-align: center
+	color: #E1CCC3	
+	text-shadow: 3px 3px 4px #000
+	.icon-logo
+		color: #7E5A50
+		font-size: 150px
+	&-gotosoc
+		margin-top: 15px
+	&-soc
+		font-size: 40px
+		.fa
+			opacity: .8
+			color: #7E5A50
+			transition: opacity .4s
+			&:hover
+				opacity: 1
+
+
+#fp-nav
+	ul
+		li
+			a
+				span
+					background: #666
+			&:hover
+				span
+					background: $accent
+			.active
+				span
+					background: $accent
+
+.fp-slidesNav
+	ul
+		li
+			a
+				span
+					background: #fff
+			a.active, a:hover
+				span
+					background: $accent
+
+.fotorama__thumb-border
+	    border-color: rgba($accent, .8)
+
+// Preload
+
+.pb-preload
+	height: 100vh
+	width: 100vw
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 999
+	background-color: #1D120E
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	.icon-logo
+		color: $accent
+		animation: preload-logo 3s ease-out infinite
+@keyframes preload-logo
+	0%
+		opacity: .5
+		color: $accent
+		font-size: 100px
+	15%
+		opacity: .7
+		font-size: 110px
+	25%
+		opacity: .9
+		font-size: 120px
+	50%
+		opacity: .1
+		font-size: 130px
+	75%
+		color: red
+		opacity: .7
+		font-size: 160px
+	90%
+		color: red
+		opacity: .9
+		font-size: 170px
+	100%
+		color: red
+		opacity: 1
+		font-size: 180px
+
+@import "media" // Всегда в конце

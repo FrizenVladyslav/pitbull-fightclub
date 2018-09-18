@@ -1,0 +1,231 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.section
+		overflow: hidden
+	video
+		display: none
+	body
+		background-image: url('../img/img6.jpg')
+	#section1
+		background-image: url(../img/img6.jpg)
+	.icon-logo
+		color: #DFCCB8
+	.pb-header-contacts
+		color: #DFCCB8
+	.s1-content
+		width: 100vw
+	.s1-footer
+		.fa
+			color: #DFCCB8
+	.fotorama-content
+		h2
+			font-size: 35px
+	#section3
+		background-position: 80% 50%
+	#section4
+		background-position: 20% 50%
+	#section5
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-bottom: 35%
+	.pb-free-time
+		white-space: nowrap
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	
+	
+	.h1-s-one
+		font-size: 50px
+		white-space: nowrap
+	.h3-s-one
+		font-size: 25px
+		white-space: nowrap
+	.s1-content
+		.icon-logo
+			font-size: 100px
+			margin-top: -1%
+	.slide
+		ul
+			font-size: 17px
+
+	.fotorama-content
+		h2
+			font-size: 23px
+		h3
+			font-size: 19px
+		.icon-logo
+			font-size: 100px
+		h1
+			font-size: 30px
+	.pb-free-time
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		h2
+			font-size: 20px 
+		h3
+			font-size: 16px
+		h1
+			font-size: 29px
+		.icon-emblem
+			font-size: 70px
+	#section4
+		.col-sm-6:first-child
+			height: 100%
+		.fotorama
+			margin-top: -100px
+		.fotorama__nav--thumbs
+			margin-top: -30px
+		
+	.fotorama
+		margin-top: -60px
+	.fotorama__nav--thumbs
+		margin-top: -110px
+
+	.pb-contacts-info
+		h2
+			font-size: 19px
+			margin-bottom: 0
+		h3
+			font-size: 16px
+	#map
+		height: 150px
+		width: 100%
+	.pb-map
+		width: 90%
+		height: 150px
+	.pb-contacts-info-soc
+		margin-top: -10px
+	.pb-contacts-info-gotosoc
+		margin: 0
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.fotorama
+		display: none
+	#section3
+		.row
+			display: flex
+			justify-content: center
+			align-items: center
+		.col-sm-6:first-child
+			display: none
+		.col-md-6
+			width: 100%
+			display: flex
+			justify-content: center
+	.fotorama-content
+		margin: 0
+		width: 100%
+	#section4
+		.container
+			width: 100%
+		.row
+			width: 100%
+		.col-sm-6
+			&:first-child
+				width: 100%
+			&:last-child
+				display: none
+
+	.pb-free-time
+		padding-top: 0
+		padding-left: 7%
+	#section5
+		.icon-logo
+			display: none
+		h2
+			margin-top: 10%
+	.slide
+		ul
+			width: 70%
+			font-size: 16px
+			li
+				margin-top: 15px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.pb-header
+		.pb-header-contacts
+			margin-right: 0
+			padding-left: 20px
+			.fa
+				margin-left: -15px
+
+		.icon-logo
+			color: $accent
+	.h1-s-one
+		font-size: 30px
+	.h3-s-one
+		font-size: 18px
+	
+	.fp-prev, .fp-next
+		top: auto
+		bottom: -43%
+	.pb-map
+		left: 5%
+	#section5
+		h2
+			margin-top: 0
+	.fotorama-content
+		h2
+			font-size: 20px
+	.slide
+		ul
+			font-size: 14px
+			li
+				margin-top: 10px
+	.pb-free-time
+		h3
+			font-size: 15px
+	.pb-contacts-info
+		h2
+			font-size: 15px
+		h3
+			font-size: 14px
+		.pb-contacts-info-gotosoc
+			font-size: 15px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.pb-header
+		.icon-logo
+			font-size: 90px
+	.h1-s-one
+		font-size: 27px
+	.h3-s-one
+		font-size: 16px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
